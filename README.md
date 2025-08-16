@@ -14,25 +14,25 @@ A focused PowerShell tool for thorough removal of Windows UWP apps
 
 
 🌟 核心优势 / Key Advantages
-功能 / Feature              本工具 / This Tool                  Geek Uninstaller	                  Win11Debloat
+功能 / Feature                                本工具 / This Tool                  Geek Uninstaller	                  Win11Debloat
 Clean packages without registry entries
 
-清理无注册信息的包  	✅ 完全支持	                            ❌ 无法处理                        ⚠️ 部分支持
+清理无注册信息的包  	                         ✅ 完全支持	                            ❌ 无法处理                    ⚠️ 部分支持
 
 Clean provisioned packages
-清理预配包	                ✅ 完整清除	                            ❌ 无法处理	                 ⚠️ 部分支持
+清理预配包	                                   ✅ 完整清除	                            ❌ 无法处理	                  ⚠️ 部分支持
 
 Custom removal list
-自定义卸载列表	        ✅ 完全可控	                             ⚠️ 手动操作	                 ⚠️ 预定义选项
+自定义卸载列表	                              ✅ 完全可控	                               ⚠️ 手动操作	                ⚠️ 预定义选项
 Detailed operation report
 
-详细操作报告	                ✅ 完整日志                               ❌ 无                                   ⚠️ 基础日志
+详细操作报告	                                ✅ 完整日志                               ❌ 无                         ⚠️ 基础日志
 Safe dry run mode
 
-安全预演模式            	✅ 无风险预览                           ❌ 无	                                 ❌ 无
+安全预演模式                                	✅ 无风险预览                               ❌ 无	                       ❌ 无
 Space recovery
 
-空间回收效果           	✅ 60%+ 空间释放	            ⚠️ 30-40%	                 ⚠️ 40-50%
+空间回收效果                                	✅ 60%+ 空间释放	                        ⚠️ 30-40%	                 ⚠️ 40-50%
 
 📥 使用指南 / Usage Guide
 下载文件，解压到纯英文文件夹
@@ -43,11 +43,16 @@ Download the repository contents and extract to a folder with English-only path
 
 ## File Structure
 
-ABP\_UWP\_App\_Remover/
-├── ABP\_UWPAppRemover\_CN.ps1    # 主脚本(中文版)/ Chinese version
-├── ABP\_UWPAppRemover\_EN.ps1    # 主脚本(英文版)/ English version
-├── patterns.txt                                       # 卸载规则文件/ Removal patterns
-└── Remove-UWPLogs/                         # 自动生成的日志目录/ Auto-generated log directory
+ 
+- ABP_UWP_App_Remover/    # 主脚本(中文版)/ Chinese version
+  - Remove-UWPLogs/       # 自动生成的日志目录/ Auto-generated log directory
+  - ABP_UWPAppRemover_CN.ps1         # 主脚本(中文版)/ Chinese version
+  - ABP_UWPAppRemover_EN.ps1         # 主脚本(英文版)/ English version
+  - patterns.txt          # 卸载规则文件/ Removal patterns
+  - README.md
+  - LICENSE
+
+
 
 
 
@@ -60,8 +65,8 @@ Edit Pattern File
 
 Example patterns (one per line)
 
-*Microsoft.YourPhone*       # 手机连接应用
-*Xbox*                                    # 所有Xbox相关组件
+*Microsoft.YourPhone*                       # 手机连接应用
+*Xbox*                                      # 所有Xbox相关组件
 *Bing*                                      # Bing系列应用
 
 
@@ -80,17 +85,21 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 
 ##### 预演模式 (不实际执行) / Dry run mode (no actual changes)
 
-.\\ABP\_UWPAppRemover\_CN.ps1 -DryRun
+.\ABP_UWPAppRemover_CN.ps1 -DryRun
+
 或/or
-.\\ABP\_UWPAppRemover\_EN.ps1 -DryRun
+
+.\ABP_UWPAppRemover_EN.ps1 -DryRun
 
 
 
 ##### 实际执行 / Actual execution
 
-.\\ABP\_UWPAppRemover\_CN.ps1
+.\ABP_UWPAppRemover_CN.ps1
+
 或/or
-.\\ABP\_UWPAppRemover\_EN.ps1
+
+.\ABP_UWPAppRemover_EN.ps1
 
 
 
@@ -161,6 +170,7 @@ Q: 卸载后如何恢复？ / How to restore after uninstallation?
 
 Get-AppxPackage -AllUsers | Where Name -eq "Microsoft.YourPhone" |
 ForEach {Add-AppxPackage -DisableDevelopmentMode -Register "$($\_.InstallLocation)\\AppXManifest.xml"}
+
 3.使用系统还原点回滚 / Rollback using system restore point
 
 
@@ -272,11 +282,18 @@ Disclaimer: The author is not responsible for any data loss or system issues cau
 
 项目维护 / Maintained by: abludypanny
 
-反馈问题 / Report Issues: https://github.com/abludypanny/ABP\_UWP\_App\_Remover/issues
+反馈问题 / Report Issues: https://github.com/abludypanny/ABP_UWP_App_Remover/issues
 
-
+         **第一次发布Github，也不会写代码，
+           主要是DeepSeek和Copilot帮我写的代码，改了一下午总算成功，
+           连Git都不知道用，所以只能网页上传，格式页面惨不忍睹，亲大佬们谅解。**
+         **This is my first time publishing on Github, and I don't know how to code. 
+         DeepSeek and Copilot helped me write the code. After spending the whole afternoon making changes, I finally succeeded. 
+         I don't even know how to use Git, so I had to upload through the web page. 
+         The formatting of the page is terrible, so please forgive me, dear experts. **
 
 &nbsp;您的UWP清理之旅从此开始！
 
 Start your UWP cleaning journey here!
+
 
