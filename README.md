@@ -282,7 +282,7 @@ Disclaimer: The author is not responsible for any data loss or system issues cau
 
 项目维护 / Maintained by: abludypanny
 
-反馈问题 / Report Issues: https://github.com/abludypanny/ABP_UWP_App_Remover/issues
+反馈问题 / Report Issues: https://github.com/abludypanny/ABP_UWP_App_Remover
 
          **第一次发布Github，也不会写代码，
            主要是DeepSeek和Copilot帮我写的代码，改了一下午总算成功，
@@ -295,5 +295,6 @@ Disclaimer: The author is not responsible for any data loss or system issues cau
 &nbsp;您的UWP清理之旅从此开始！
 
 Start your UWP cleaning journey here!
+
 
 
