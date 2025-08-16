@@ -1,0 +1,39 @@
+管理员 PowerShell 打开后：
+
+定位到脚本所在的目录，例如(路径取决于你放在哪里)：
+cd D:\SysConfig\ABP_UWP_App_Remover
+
+# 预演模式：
+.\ABP_UWPAppRemover_CN.ps1 -DryRun
+
+# 确认清单后执行：
+.\ABP_UWPAppRemover_CN.ps1
+
+
+
+关键优势：脚本通过-AllUsers参数和通配符匹配，能处理Geek Uninstaller可能遗漏的：
+
+1.多用户安装实例
+2.系统级预配包
+3.不同版本残留
+
+
+
+亲测：
+清理前："C:\Program Files\WindowsApps"     4.6GB，占用2.5GB
+               "C:\ProgramData\Microsoft\Windows\AppRepository\"    36.4MB
+               "C:\Users\Suzuki\AppData\Local\Packages"          101MB
+               
+
+
+
+清理后："C:\Program Files\WindowsApps"     2.8GB，占用1.7GB
+               "C:\ProgramData\Microsoft\Windows\AppRepository\"    34.1MB
+               "C:\Users\Suzuki\AppData\Local\Packages"          125MB
+               
+
+
+
+其他命令：
+Get-AppxPackage -AllUsers → 找已注册的用户包
+Get-AppxProvisionedPackage -Online → 找预配包

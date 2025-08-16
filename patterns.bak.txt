@@ -1,0 +1,70 @@
+﻿# ===== 通用组件 =====
+*Microsoft.Microsoft3DViewer*           # 3D Viewer（3D查看器）
+*Microsoft.549981C3F5F10*               # Cortana（小娜）
+*Microsoft.WindowsCamera*               # Camera Control（摄像头控制）
+*Microsoft.Camera*                      # 摄像头备用名
+*Microsoft.OneConnect*                  # OneConnect（跨设备支持）
+*Microsoft.WindowsFeedbackHub*          # Feedback Hub（反馈中心）
+*Microsoft.ZuneMusic*                   # Groove Music（音乐）
+*Microsoft.ZuneVideo*                   # Movies & TV（影视）
+*Microsoft.GetHelp*                     # Get Help（帮助）
+*Microsoft.Getstarted*                  # Tips（使用技巧）
+
+# ===== 跨设备组件 =====
+*Microsoft.YourPhone*                   # Phone Link（手机伴侣）
+*Microsoft.MobilePlans*                 # Mobile Plans（蜂窝套餐）
+*Microsoft.CBP*                         # CBP（跨设备后台服务）
+*Microsoft.CrossDevice*                 # CrossDevice（跨设备传输）
+*Microsoft.DeviceExperience*            # Device Experience（设备体验）
+
+# ===== 游戏组件 =====
+*Microsoft.XboxGamingOverlay*           # Game Bar（游戏工具栏）
+*Microsoft.XboxIdentityProvider*        # Xbox 身份提供
+*Microsoft.Xbox.TCUI*                   # Xbox TCUI
+*Microsoft.XboxSpeechToTextOverlay*     # Game Speech Window（游戏语音窗口）
+*Microsoft.MicrosoftSolitaireCollection*# Solitaire（纸牌）
+*Microsoft.GamingApp*                   # Xbox 应用
+*Microsoft.GamingServices*              # Gaming Services（游戏核心服务）
+
+# ===== 小组件 =====
+*MicrosoftWindows.Client.WebExperience* # Web Experience Pack（小组件平台）
+*MicrosoftWindows.Client.Widgets*       # Widgets（小组件）
+*Microsoft.WidgetsPlatformRuntime*      # Widgets Runtime（运行时）
+*Global.Widget*                         # Global Widgets（全局小组件）
+*StartExperiences*                         # Start Experiences App（小组件内容源）
+
+# ===== 生产力工具 =====
+*Microsoft.WindowsCommunicationsApps*   # Mail & Calendar（邮件与日历）
+*OutlookForWindows*                     # Outlook（新桌面版）
+*Clipchamp.Clipchamp*                   # Clipchamp（视频编辑）
+*Microsoft.Todos*                       # Microsoft To Do（待办）
+*Microsoft.Office.OneNote*              # OneNote UWP 版
+*Microsoft.People*                      # People（联系人）
+*Microsoft.PowerAutomateDesktop*        # Power Automate（自动化）
+*Microsoft.QuickAssist*                 # Quick Assist（远程协助）
+*Microsoft.SkypeApp*                    # Skype
+*Microsoft.MicrosoftStickyNotes*        # Sticky Notes（便签）
+*MicrosoftOfficeHub*                    # Office Hub
+*Microsoft365Copilot*                  # Microsoft 365 桌面版 原Office Hub
+
+# ===== 地图与媒体 =====
+*Microsoft.WindowsMaps*                 # Maps（地图）
+*Microsoft.MixedReality.Portal*         # Mixed Reality（混合现实门户）
+*Microsoft.Whiteboard*                  # Whiteboard（白板）
+
+# ===== 第三方应用 =====
+*WinRAR*                                # WinRAR UWP 版
+*baidu*                                 # 百度网盘 UWP 版
+*RetailDemo*                            # 零售演示
+
+# ===== 冗余组件 =====
+*Microsoft.DevHome*                     # Dev Home（开发者主页）
+*Microsoft.MSPaint*                     # Paint 3D（画图 3D）
+*Microsoft.Print3D*                     # Print 3D（3D 打印）
+*MicrosoftCorporationII.MicrosoftFamily*# Microsoft Family（家庭安全）
+*MicrosoftTeams*                        # Teams（新）
+*MSTeams*                               # Teams（旧）
+*Microsoft.BingNews*                    # News（新闻）
+*Microsoft.BingWeather*                 # Weather（天气）
+*Microsoft.MicrosoftNews*               # News（备用名）
+*Microsoft.Bing*                            # 搜索建议

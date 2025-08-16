@@ -1,0 +1,19 @@
+# 忽略日志目录
+Remove-UWPLogs/
+
+# 忽略系统临时文件
+*.tmp
+*.log
+*.bak
+
+# 忽略 Windows 特定文件
+Thumbs.db
+Desktop.ini
+
+# 忽略 IDE 配置文件
+.vscode/
+.idea/
+
+# 忽略 PowerShell 模块缓存
+*.psd1
+*.psm1

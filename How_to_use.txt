@@ -1,0 +1,37 @@
+Open PowerShell as Administrator:
+
+Navigate to the script directory (path depends on where you placed it): 
+            cd D:\SysConfig\ABP_UWP_App_Remover
+
+Dry-run mode:
+.\ABP_UWPAppRemover_EN.ps1 -DryRun
+
+Execute after confirming the audit list:
+.\ABP_UWPAppRemover_EN.ps1
+
+Key advantages: The script uses the -AllUsers parameter and wildcard matching to handle cases that Geek Uninstaller may miss:
+
+1.Multi-user installation instances
+
+2.System-level provisioned packages
+
+3.Residuals from different app versions
+
+
+
+Tested results: 
+Before cleanup:
+"C:\Program Files\WindowsApps" 4.6GB, 2.5GB used 
+"C:\ProgramData\Microsoft\Windows\AppRepository\" 36.4MB 
+"C:\Users\Suzuki\AppData\Local\Packages" 101MB
+
+After cleanup: 
+"C:\Program Files\WindowsApps" 2.8GB, 1.7GB used 
+"C:\ProgramData\Microsoft\Windows\AppRepository\" 34.1MB 
+"C:\Users\Suzuki\AppData\Local\Packages" 125MB
+
+
+
+Other commands: 
+Get-AppxPackage -AllUsers                   → Find registered user packages 
+Get-AppxProvisionedPackage -Online                          → Find provisioned packages
